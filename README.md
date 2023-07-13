@@ -1,7 +1,5 @@
 # project-starter-template
 
-## Description
-
 A simple template repository with a React frontend and Express backend for quickly starting new projects.
 
 ## Prerequisites
