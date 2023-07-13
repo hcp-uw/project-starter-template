@@ -1,6 +1,6 @@
-# project-starter-template
+# Node.js (React Express) Project Starter 
 
-A simple template repository with a React frontend and Express backend for quickly starting new projects.
+A simple template repository with a React frontend and Express backend for quickly starting new full-stack projects.
 
 ## Prerequisites
 
