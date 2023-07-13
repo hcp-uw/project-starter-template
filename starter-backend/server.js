@@ -6,11 +6,11 @@ const { unknownEndpoint } = require('./middleware');
 const app = express();
 
 // enable cors
-app.use(cors(corsOptions));
+app.use(cors());
 
 // test endpoint
 app.get('/hello', (req, res) => { 
-    res.send('Hello, HCP Project Team! If you see this, your front end and back end are connected') 
+    res.send('Attention HCP Project Team! If you see this, your front end and back end are connected') 
 })
 
 // error handling
