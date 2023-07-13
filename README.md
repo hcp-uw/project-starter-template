@@ -53,3 +53,9 @@ npm start
 cd starter-frontend
 npm start
 ```
+
+
+### Authors
+
+[Elijah Melton](https://github.com/elimelt)
+
