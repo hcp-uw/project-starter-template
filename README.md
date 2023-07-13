@@ -59,3 +59,7 @@ npm start
 
 [Elijah Melton](https://github.com/elimelt)
 
+### Contributing 🤝
+
+If you have any feedback feel free to submit an issue/pull request! Contributions are more than welcome.
+
