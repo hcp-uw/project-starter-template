@@ -2,18 +2,18 @@
 
 A simple template repository with a React frontend and Express backend for quickly starting new full-stack projects.
 
-## Prerequisites
+## Prerequisites ‼️
 
 To use this template, you need to have the following installed on your machine:
 
 - Node.js 
 - npm 
 
-## Getting Started
+## Getting Started ▶️
 
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Installation
+### Installation 💭
 
 1. Clone the repository to your local machine:
 
@@ -37,7 +37,7 @@ cd ../starter-backend
 npm i
 ```
 
-## Development
+## Development 💻
 
 To start the development environment, follow these steps:
 
@@ -55,7 +55,7 @@ npm start
 ```
 
 
-### Authors
+### Authors 📝
 
 [Elijah Melton](https://github.com/elimelt)
 
