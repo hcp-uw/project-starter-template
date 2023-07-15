@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <h1>Hello, HCP</h1>
-      <p>`${message}`</p>
+      <p>{message}</p>
     </>
   );
 }
