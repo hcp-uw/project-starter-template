@@ -1,12 +1,23 @@
 import './App.css';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const baseURL = 'http://localhost:3001'
+const baseURL = 'http://localhost:3001';
 
 function App() {
-  let message = axios.get(`${baseURL}/hello`).then(res => res);
+  const [message, setMessage] = useState('');
 
-  console.log(message)
+  useEffect(() => {
+    axios.get(`${baseURL}/hello`)
+      .then(res => {
+        setMessage(res.data); 
+      })
+      .catch(error => {
+        console.error('error fetching data: ', error);
+      });
+  }, []); 
+
+  console.log(message);
   return (
     <>
       <h1>Hello, HCP</h1>
