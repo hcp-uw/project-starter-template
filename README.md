@@ -13,24 +13,18 @@ To use this template, you need to have the following installed on your machine:
 
 These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Installation 💭
+1. If you are a part of HCP, request a new repository using this template.
 
-1. Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/hcp-uw/project-starter-template.git
-```
-
-2. Change into the project's directory:
+2. Clone your new repository:
 
 ```bash
-cd project-starter-template
+git clone <your-repo-url>
 ```
-
 
 3. Install the required dependencies for both the frontend and backend:
 
 ```bash
+cd <your-repo-name>
 cd starter-frontend
 npm i
 cd ../starter-backend
@@ -53,7 +47,6 @@ npm start
 cd starter-frontend
 npm start
 ```
-
 
 ### Authors 📝
 
