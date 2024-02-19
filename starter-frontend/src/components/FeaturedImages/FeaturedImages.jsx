@@ -13,7 +13,7 @@ const FeaturedImages = () => {
     <div className='featured-container'>
       <h1 className='featured-title'>Featured Images</h1>
       {images.length === 0 ? (
-        <div className='no-images'>No images to speak of...</div>
+        <div className='no-images'><i>No images to speak of...</i></div>
       ) : (
         <div className='image-grid'>
           {images.map((image, index) => (

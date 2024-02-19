@@ -12,7 +12,7 @@
   
   .no-images {
     font-size: 1.2rem;
-    color: #777;
+    color: #000000;
     text-align: center;
   }
   
@@ -33,4 +33,3 @@
   .featured-image:hover {
     transform: scale(1.05);
   }
-  

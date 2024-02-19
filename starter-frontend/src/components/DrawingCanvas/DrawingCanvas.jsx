@@ -5,6 +5,14 @@ import './DrawingCanvas.css'
 
 const colors = ['black', 'red', 'green', 'blue', 'yellow']
 
+// Below are two simple stateless functional components that are used by the
+// DrawingCanvas component to allow the user to select a color and brush size.
+// You can factor our small features like this into their own components to
+// make your code more modular and easier to understand. We could have just as
+// easily defined these components inside the DrawingCanvas component, or even
+// put them in a separate file and imported them. This is a matter of preference,
+// and there are many ways to organize your code.
+
 const ColorSelector = (props) =>  (
   <div className='color-selector'>
     <select onChange={e => props.setColor(e.target.value)}>
@@ -17,6 +25,11 @@ const ColorSelector = (props) =>  (
   </div>
 )
 
+// The `propTypes` property is used to define the types of the props that a
+// component should receive. This is useful for catching bugs and documenting
+// the expected usage of a component. It is not required, but it is a good
+// practice to use it in your components. In this repository, we've set up the
+// linter to enforce the use of propTypes
 ColorSelector.propTypes = {
   setColor: PropTypes.func.isRequired
 }
@@ -37,6 +50,22 @@ BrushSizeSlider.propTypes = {
   brushSize: PropTypes.number.isRequired,
   setBrushSize: PropTypes.func.isRequired
 }
+
+// This component is meant to showcase one of the strengths of React: the ability to
+// encapsulate complex state and behavior into a single component. The DrawingCanvas
+// component is a simple drawing application that allows the user to draw lines on a
+// canvas using different colors and brush sizes. It also provides buttons to clear the
+// canvas, export the drawing as an image, and upload the drawing to the server.
+//
+// However, from the perspective of the parent component, the DrawingCanvas component is
+// a black box. It doesn't need to know how the drawing is implemented, it only needs to
+// know how to interact with it.
+//
+// In the same way, your team should strive to create components that are easy to use and
+// understand, and that hide their implementation details from the rest of the application.
+// This way, you can build complex applications by combining simple, well-defined components,
+// and can work on different parts of the application in parallel without stepping on each
+// other's toes.
 
 const DrawingCanvas = () => {
   const [isDrawing, setIsDrawing] = useState(false)
